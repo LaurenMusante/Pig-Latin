@@ -7,10 +7,17 @@ function pigLatin(phrase) {
       phrase += "way";
     } else if(reg.test(phrase[0])) {
       letters = phrase.split("");
-      letters.push(letters.splice(0, 1));
+      for (var i = 0; i < phrase.length; i++) {
+        if(!VOWELS.includes(phrase[i])) {
+          letters.push(letters.splice(0, 1));
+        } else {
+          break;
+        }
+      }
+
       phrase = letters.join("");
       phrase += "ay";
-    } 
+    }
 
 
   console.log(phrase);

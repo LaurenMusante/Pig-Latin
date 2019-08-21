@@ -9,16 +9,16 @@ function pigLatin(phrase) {
       letters = phrase.split("");
       for (var i = 0; i < phrase.length; i++) {
         if(!VOWELS.includes(phrase[i])) {
-          letters.push(letters.splice(0, 1));
+          if(phrase[i].toLowerCase() === 'q' && phrase[i+1].toLowerCase() === 'u') {
+            letters.push(letters.splice(0, 1));
+          }
+            letters.push(letters.splice(0, 1));
         } else {
           break;
         }
       }
-
       phrase = letters.join("");
       phrase += "ay";
     }
-
-
   console.log(phrase);
 }

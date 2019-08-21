@@ -5,6 +5,7 @@ $(function(){
     var input = $("#sentence").val();
     var output = pigLatin(input);
     $("#output").text(output);
+    $("title").text("igPay atinLay anslatorTray");
   });
   $("#clear").click(function(){
     $("#pigForm").trigger("reset");

@@ -2,7 +2,7 @@
 
 #### _A program to translate a user's input into Pig Latin, 21 Aug 2019_
 
-#### By _**Jason Huels and Jacqueline Remmel**_
+#### By _**Jason Huels, Jacqueline Remmel, and Lauren Musante**_
 
 ## Specifications & Description
 
@@ -57,4 +57,4 @@ _JavaScript, jQuery_
 
 *Open-source
 
-Copyright (c) 2019 **_Jason Huels and Jacqueline Remmel_**
+Copyright (c) 2019 **_Jason Huels, Jacqueline Remmel, and Lauren Musante_**

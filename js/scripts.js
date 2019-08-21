@@ -1,11 +1,14 @@
 function pigLatin(phrase) {
-  const VOWELS = ["a", "e", "i", "o", "u"];
+  const VOWELS = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+  var reg = /^[a-zA-Z]+$/g;
 
-  VOWELS.forEach(function(vowel) {
-    if(phrase[0] === vowel) {
+
+    if(VOWELS.includes(phrase[0])) {
+      phrase += "way";
+    } else if(reg.test(phrase[0])) {
       phrase += "ay";
     }
-  });
+
 
   console.log(phrase);
 }
